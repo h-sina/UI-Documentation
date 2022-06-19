@@ -1,0 +1,81 @@
+body {
+  background-color: #000000;
+  font-family: Comic Sans MS, Tahoma, Arial, 'Heiti SC', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei';
+  color: white;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header {
+}
+
+textarea {
+  display: block;
+  width: 400px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.context {
+  width: 180px;
+  height: 500px;
+  margin: 20px 2px 0 2px;
+  border-right: 1px solid #d3d3d3;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.context a {
+  display: block;
+}
+
+.context a:link {
+  color: wheat;
+}
+
+.context a:visited {
+  color: red;
+}
+
+.extra {
+  position: fixed;
+  right: 20px;
+  top: 3px;
+}
+
+.extra a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  margin-left: 10px;
+}
+
+h5 {
+  margin-left: 15px;
+}
+

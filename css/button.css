@@ -1,0 +1,9 @@
+.bt {
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: Comic Sans MS, Tahoma, Arial, "Heiti SC", "Microsoft YaHei",
+    "WenQuanYi Micro Hei";
+}
