@@ -8,6 +8,8 @@
 	<link rel="shortcut icon" href="./images/myicon.svg">
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="./css/button.css" />
+	<link rel="stylesheet" href="./css/table.css" />
+
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 	<script src="./js/button.js" defer></script>
@@ -45,8 +47,9 @@
 			<h3><i class="fa fa-bookmark-o" aria-hidden="true"></i> Context</h3>
 			<a href='#introduction'>#brief introduction</a>
 			<a href='#button'>#button</a>
-			<a href='#icon'>#icon</a>
 			<a href='#input'>#input</a>
+			<a href='#carousel'>#carousel</a>
+			<a href='#icon'>#icon</a>
 			<a href='#form'>#form</a>
 			<a href='#layout'>#layout</a>
 			<a href='#table'>#table</a>
@@ -74,21 +77,64 @@
 				<h3> 组件：</h3>
 				<!-- button -->
 				<h4 id="button">button</h4>
-
-				<h5>:msg='data.msg' || msg='button'设置按钮文字</h5>
-
-				<h5>@click='clickEvent'设置按钮点击事件</h5>
-
-				<h5>:shape='round|circle|默认' 设置按钮形状</h5>
-
-				<h5>:color='red' 设置按钮字体颜色</h5>
-
-				<h5>:disabled='true|false' 设置按钮禁用状态</h5>
-
-				<div id="app">
+				<!-- <div id="app">
 					<my-button msg="button"></my-button>
-				</div>
+				</div> -->
+				<h5>使用：
+					&lt;n-button&gt;&lt;/n-button&gt;
+				</h5>
+				<table>
+					<tr>
+						<th>API</th>
+						<th>说明</th>
+					</tr>
+					<tr>
+						<td>:msg='data.msg'</td>
+						<td>设置按钮文字</td>
+					</tr>
+					<tr>
+						<td>@click='clickEvent'</td>
+						<td>设置按钮点击事件</td>
+					</tr>
+					<tr>
+						<td>:shape='round|circle|默认'</td>
+						<td>设置按钮形状</td>
+					</tr>
+					<tr>
+						<td>:color='red'</td>
+						<td>设置按钮字体颜色</td>
+					</tr>
+					<tr>
+						<td>:disabled='true|false'</td>
+						<td>设置按钮禁用状态</td>
+					</tr>
+				</table>
 				<!-- button -->
+
+				<!-- carousel -->
+				<h4 id="carousel">carousel</h4>
+				<h5>使用：
+					&lt;n-carousel&gt; &lt;n-carousel-item&gt;&lt;/n-carousel-item&gt; &lt;/n-carousel&gt;
+				</h5>
+				<table>
+					<tr>
+						<th>API</th>
+						<th>说明</th>
+					</tr>
+					<tr>
+						<td>:width='width（500px）'</td>
+						<td>设置宽度</td>
+					</tr>
+					<tr>
+						<td>:height='height（200px）'</td>
+						<td>设置高度</td>
+					</tr>
+					<tr>
+						<td>:speed='speed（1/2/3）'</td>
+						<td>设置走马灯转换速度</td>
+					</tr>
+				</table>
+				<!-- carousel -->
 
 				<!-- icon -->
 				<h4 id="icon">icon</h4>
@@ -153,7 +199,7 @@
 			</div>
 		</div>
 		<div class="arrow" style="position: fixed;bottom: 80px;right: 200px;cursor: pointer;display: none;">
-			<a href="#top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
+			<a href="#top"><i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i></a>
 		</div>
 	</div>
 
